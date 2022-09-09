@@ -14,7 +14,7 @@ jobs:
 
       - run: echo $GCP_SERVICE_ACCOUNT | base64 -di > ~/service_account_key.json
       - run: sudo apt update
-      - run: sudo apt-get install google-cloud-sdk==394.0.0 -y
+      - run: sudo apt-get install google-cloud-sdk=394.0.0 -y
       - run: gcloud version
       - run: gcloud auth activate-service-account \
              cloud-storage-transfer-bot@voltaic-country-281210.iam.gserviceaccount.com \
