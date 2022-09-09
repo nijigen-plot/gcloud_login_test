@@ -16,5 +16,7 @@ jobs:
           credentials_json: ${{ secrets.GCP_SERVICE_ACCOUNT }}
       - uses: google-github-actions/setup-gcloud@v0
       - run: gcloud info
+      - run: gcloud version
+      - run: gcloud auth list
              
       
